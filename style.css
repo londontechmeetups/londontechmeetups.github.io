@@ -5,11 +5,16 @@ body {
   font-size:18px;
   color:#444;
   padding:0 10px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
-h1,h2,h3{
-  line-height:1.2
+h1,h2,h3,h4 {
+  line-height: 1.2;
+  font-weight: 100;
+}
+h1 {
+  margin: 200px 0px 100px 0px;
 }
 a {
   color: #00CA9E;
@@ -20,6 +25,7 @@ a:hover {
 }
 nav ul {
   padding: 0;
+  margin: 0px auto;
 }
 nav li {
   list-style: none;
@@ -30,12 +36,34 @@ nav li a {
   background-color: #00CA9E;
   color: #fff;
   padding: 10px;
-  margin: 0px 10px 10px 0px;
+  margin: 0;
 }
 nav li a:hover {
-  background-color: #008467;
+  color: #008467;
+}
+.home{
+  color: #008467;
+}
+.home:hover {
   color: #fff;
 }
 nav {
+  background-color: #00CA9E;
   overflow: hidden;
+  position: fixed;
+  top:100px;
+  left: 0;
+  width: 100%;
+  z-index: 150;
+}
+ul {
+  list-style-type: square;
+}
+header {
+  height: 100px;
+  width: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  background: url("london-skyline.png") #fff;
 }
