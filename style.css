@@ -14,7 +14,7 @@ h1,h2,h3,h4 {
   font-weight: 100;
 }
 h1 {
-  margin: 250px 0px 50px 0px;
+  margin: 270px 0px 50px 0px;
 }
 a {
   color: #00CA9E;
@@ -50,7 +50,7 @@ nav li a:hover {
 nav {
   background-color: #00CA9E;
   overflow: hidden;
-  position: fixed;
+  position: absolute;
   top:98px;
   left: 0;
   width: 100%;
@@ -63,7 +63,24 @@ header {
   height: 100px;
   width: 100%;
   left: 0;
-  position: fixed;
+  position: absolute;
   top: 0;
   background: url("london-skyline.png") #fff;
+}
+hr {
+  margin: 50px 0px;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+@media screen and (min-width: 400px) {
+  nav, header {
+    position: fixed;
+  }
+}
+@media screen and (min-width: 900px) {
+  h1 {
+    margin-top: 200px;
+  }
 }
