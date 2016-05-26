@@ -1,0 +1,41 @@
+body {
+  margin:40px auto;
+  max-width:650px;
+  line-height:1.6;
+  font-size:18px;
+  color:#444;
+  padding:0 10px;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1,h2,h3{
+  line-height:1.2
+}
+a {
+  color: #00CA9E;
+  text-decoration: none;
+}
+a:hover {
+  color: #008467;
+}
+nav ul {
+  padding: 0;
+}
+nav li {
+  list-style: none;
+}
+nav li a {
+  float: left;
+  display: block;
+  background-color: #00CA9E;
+  color: #fff;
+  padding: 10px;
+  margin: 0px 10px 10px 0px;
+}
+nav li a:hover {
+  background-color: #008467;
+  color: #fff;
+}
+nav {
+  overflow: hidden;
+}
