@@ -14,7 +14,7 @@ h1,h2,h3,h4 {
   font-weight: 100;
 }
 h1 {
-  margin: 200px 0px 100px 0px;
+  margin: 250px 0px 50px 0px;
 }
 a {
   color: #00CA9E;
@@ -51,7 +51,7 @@ nav {
   background-color: #00CA9E;
   overflow: hidden;
   position: fixed;
-  top:100px;
+  top:98px;
   left: 0;
   width: 100%;
   z-index: 150;
