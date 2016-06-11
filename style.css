@@ -57,10 +57,10 @@ nav ul {
 nav li {
   list-style: none;
 }
-nav li.icon {
+nav .icon {
   display: none;
 }
-nav li.home {
+nav .home {
   font-weight: 400;
 }
 nav li a {
