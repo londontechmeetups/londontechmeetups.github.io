@@ -11,22 +11,22 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-  <container>
-    <header>
-      <nav>
-        <ul class="topnav">
-          <li><a href="#top" class="home">London Tech Meetups</a></li>
-          <li><a href="#language">Languages</a></li>
-          <li><a href="#technology">Technologies</a></li>
-          <li><a href="#beginner">Beginners</a></li>
-          <li><a href="#underrepresented">Underrepresented groups</a></li>
-          <li><a href="#about">About</a></li>
-          <li class="icon">
-            <a href="javascript:void(0);" onclick="navToggle()">Menu &#9776;</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <header>
+  </header>
+    <nav>
+      <ul class="topnav">
+        <li><a href="#top" class="home" onclick="navToggle()">London Tech Meetups</a></li>
+        <li><a href="#language" onclick="navToggle()">Languages</a></li>
+        <li><a href="#technology" onclick="navToggle()">Technologies</a></li>
+        <li><a href="#beginner" onclick="navToggle()">Beginners</a></li>
+        <li><a href="#underrepresented" onclick="navToggle()">Underrepresented groups</a></li>
+        <li><a href="#about" onclick="navToggle()">About</a></li>
+        <li class="icon">
+          <a href="javascript:void(0);" onclick="navToggle()">Menu &#9776;</a>
+        </li>
+      </ul>
+    </nav>
+  <main>
     <h1 id="top">London tech meetups</h1>
     <h2 id="language">Language-specific</h2>
     <ul>
@@ -107,13 +107,30 @@
     <p>It's up to date as of June 2016.</p>
     <h3>Add a meetup</h3>
     <p>You can either email a suggestion to <a href="mailto:hello@jennybrennan.com">hello&#64;jennybrennan.com</a>, or <a href="https://github.com/londontechmeetups/londontechmeetups.github.io" title="London tech meetup list git repository">submit a pull-request to the GitHub repository</a> for this page.</p>
-  </container>
+  </main>
   <!-- TODO: Add new Google Analytics -->
 
   <script>
-      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
     function navToggle() {
         document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+    }
+
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+      var headings = document.getElementsByTagName("h2");
+      if (document.body.scrollTop > 140 || document.documentElement.scrollTop > 140) {
+        document.getElementsByTagName("nav")[0].className = "fixie";
+        for (i=0; i < headings.length; i++) {
+           headings[i].className = "scrolled";
+        }
+      } else {
+        document.getElementsByTagName("nav")[0].className = "";
+        for (i=0; i < headings.length; i++) {
+           headings[i].className = "";
+        }
+      }
     }
   </script>
 </body>
